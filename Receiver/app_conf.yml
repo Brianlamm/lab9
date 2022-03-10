@@ -1,0 +1,9 @@
+version: 1 
+eventstore1: 
+  url: http://localhost:8090/report/ticket
+eventstore2: 
+  url: http://localhost:8090/report/sale
+events: 
+  hostname: acit3855-lab6.westus3.cloudapp.azure.com
+  port: 9092 
+  topic: events
