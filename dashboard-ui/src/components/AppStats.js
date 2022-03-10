@@ -35,18 +35,12 @@ export default function AppStats() {
                 <table className={"StatsTable"}>
 					<tbody>
 						<tr>
-							<th>Blood Pressure</th>
-							<th>Heart Rate</th>
+							<th>Ticket</th>
+							<th>Sale</th>
 						</tr>
 						<tr>
-							<td># BP: {stats['num_bp_readings']}</td>
-							<td># HR: {stats['num_hr_readings']}</td>
-						</tr>
-						<tr>
-							<td colspan="2">Number of ticket report: {stats['num_ticket_report']}</td>
-						</tr>
-						<tr>
-							<td colspan="2">Number of sale report: {stats['num_sale_report']}</td>
+							<td># Ticket: {stats['num_ticket_report']}</td>
+							<td># Sale: {stats['num_sale_report']}</td>
 						</tr>
 						<tr>
 							<td colspan="2">Minimum ticket price: {stats['min_sale_report']}</td>
