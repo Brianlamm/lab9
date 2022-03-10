@@ -8,7 +8,7 @@ export default function AppStats() {
 
 	const getStats = () => {
 	
-        fetch(`http://<Cloud DNS>:8100/stats`)
+        fetch(`http://acit3855-lab6.westus3.cloudapp.azure.com:8100/stats`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
@@ -43,13 +43,16 @@ export default function AppStats() {
 							<td># HR: {stats['num_hr_readings']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BP Systolic: {stats['max_bp_sys_reading']}</td>
+							<td colspan="2">Number of ticket report: {stats['num_ticket_report']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BR Diastolic: {stats['max_bp_dia_reading']}</td>
+							<td colspan="2">Number of sale report: {stats['num_sale_report']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max HR: {stats['max_bp_sys_reading']}</td>
+							<td colspan="2">Minimum ticket price: {stats['min_sale_report']}</td>
+						</tr>
+                        <tr>
+							<td colspan="2">Maximum ticket price: {stats['max_sale_report']}</td>
 						</tr>
 					</tbody>
                 </table>
